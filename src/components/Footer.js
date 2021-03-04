@@ -1,7 +1,9 @@
+import'../css/footer.css';
+
 const Footer = () => {
     return ( 
-        <footer>
-            <p>Michal Siminski</p>
+        <footer className="bg-info">
+            <p className="text-light">Michal Siminski &copy;</p>
         </footer>
      );
 }

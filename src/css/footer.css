@@ -1,0 +1,8 @@
+footer {
+  height: 50px;
+  line-height: 50px;
+}
+footer > p {
+  margin-left: 70%;
+  font-size: 18px;
+}

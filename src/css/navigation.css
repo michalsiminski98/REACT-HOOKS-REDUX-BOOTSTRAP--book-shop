@@ -1,0 +1,11 @@
+.navbar-nav {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.logo {
+  width: 40px;
+}

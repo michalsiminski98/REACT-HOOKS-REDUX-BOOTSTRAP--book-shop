@@ -1,0 +1,18 @@
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+.titleSection {
+  text-align: center;
+}
+.describe {
+  width: 80%;
+  text-align: center;
+}
+.card-img-top {
+  height: 280px;
+}
+.jumbotron {
+  width: 40vw;
+  margin-left: 100px;
+}
