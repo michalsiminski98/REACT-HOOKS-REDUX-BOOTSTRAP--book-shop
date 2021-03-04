@@ -1,8 +1,6 @@
 const Header = () => {
     return ( 
-        <div>
-            header
-        </div>
+        <img src="https://wallpaperaccess.com/full/1567666.png" alt="header photo"/>
      );
 }
  

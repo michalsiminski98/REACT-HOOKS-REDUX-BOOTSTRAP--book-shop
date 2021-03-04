@@ -1,8 +1,31 @@
+import { Route, Switch } from 'react-router';
+import Home from '../pages/Home';
+import Contact from '../pages/Contact';
+import Shop from '../pages/Shop';
+import Cart from '../pages/Cart';
+import ErrorPage from '../pages/ErrorPage';
+
 const Page = () => {
     return ( 
-        <div>
-            Page
-        </div>
+        <>
+        <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route path="/contact">
+                <Contact />
+            </Route>
+            <Route exact path="/shop">
+                <Shop />
+            </Route>
+            <Route path="/cart">
+                <Cart />
+            </Route>
+            <Route path="/">
+                <ErrorPage />
+            </Route>
+        </Switch>   
+      </>
      );
 }
  

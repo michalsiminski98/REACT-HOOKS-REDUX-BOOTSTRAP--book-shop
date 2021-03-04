@@ -1,8 +1,8 @@
 const Footer = () => {
     return ( 
-        <div>
-            Footer
-        </div>
+        <footer>
+            <p>Michal Siminski</p>
+        </footer>
      );
 }
  
