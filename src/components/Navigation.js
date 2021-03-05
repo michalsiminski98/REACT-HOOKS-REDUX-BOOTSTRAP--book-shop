@@ -12,7 +12,7 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                 <NavLink to="/">
-                    <a className="text-light nav-item nav-link active">Home</a>
+                    <a className="text-light nav-item nav-link">Home</a>
                 </NavLink>
                 <NavLink to="/contact">
                     <a className="text-light nav-item nav-link">Contact</a>
