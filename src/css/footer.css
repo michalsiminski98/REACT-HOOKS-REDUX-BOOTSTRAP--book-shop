@@ -6,3 +6,9 @@ footer > p {
   margin-left: 70%;
   font-size: 18px;
 }
+
+@media (max-width: 414px) {
+  footer > p {
+    margin-left: 13%;
+  }
+}

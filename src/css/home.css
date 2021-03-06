@@ -16,3 +16,9 @@
   width: 40vw;
   margin-left: 100px;
 }
+@media (max-width: 540px) {
+  .jumbotron {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}

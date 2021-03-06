@@ -1,6 +1,8 @@
 import React from 'react';
  import { Formik, Form, useField } from 'formik';
  import * as Yup from 'yup';
+
+ import '../css/contact.css'
  
  const MyTextInput = ({ label, ...props }) => {
    const [field, meta] = useField(props);
@@ -32,7 +34,8 @@ import React from 'react';
  
  const Contact = () => {
    return (
-     <>
+       <>
+     <section className="subscribeWrapper">
        <h1>Subscribe!</h1>
        <Formik
          initialValues={{
@@ -73,13 +76,25 @@ import React from 'react';
              placeholder="email..."
            />
 
-           <MyCheckbox name="acceptedTerms">
+           <MyCheckbox name="acceptedTerms" className="checkboxSubscribe">
              I accept the terms and conditions
            </MyCheckbox>
  
-           <button type="submit">Submit</button>
+           <button type="submit">Subscribe</button>
          </Form>
        </Formik>
+     </section>
+     <section className="subscribeDescribe my-5">
+         <div className="describe">
+         <h3>Lorem ipsum</h3>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti similique ipsam! Officiis totam porro placeat voluptas ratione, pariatur mollitia consequuntur voluptatem ex ducimus odio impedit, facere magni inventore facilis quidem, minus provident autem? Voluptatibus recusandae nostrum quod culpa iste eaque animi eveniet, quas repellat molestias quibusdam quisquam corrupti reiciendis adipisci quia ut aperiam eius vel, blanditiis voluptas numquam dolor!</p>
+         </div>
+         <div className="contactData">
+             <h3>Lorem ipsum</h3>
+             <p>Email: asdasd@ads.com</p>
+             <p>Phone: +44 444 444 444</p>
+         </div>
+     </section>
      </>
    );
  };
