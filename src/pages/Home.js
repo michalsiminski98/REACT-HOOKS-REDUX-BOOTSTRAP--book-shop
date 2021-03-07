@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom';
 import'../css/home.css';
 
 const Home = () => {
@@ -32,11 +33,13 @@ const Home = () => {
             </div>
         </div>
           <div className="jumbotron">
-        <h4 className="h1">Skontaktuj się z nami!</h4>
-        <p className="lead">Będziemy wdzięczni za każdy feedback dotyczący naszej firmy.</p>
+        <h4 className="h1">Contact with us!</h4>
+        <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi inventore, possimus atque quia illum reiciendis.</p>
         <hr className="my-4"/>
         <p className="lead">
-            <a className="btn btn-warning btn-lg" href="#" role="button">Kontakt</a>
+        <NavLink to="/contact">
+            <button className="btn btn-warning btn-lg">Contact</button>
+        </NavLink>
         </p>
         </div>
         </div>

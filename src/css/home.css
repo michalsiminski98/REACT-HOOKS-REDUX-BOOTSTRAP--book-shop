@@ -1,6 +1,7 @@
 .wrapper {
   width: 80vw;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 .titleSection {
   text-align: center;

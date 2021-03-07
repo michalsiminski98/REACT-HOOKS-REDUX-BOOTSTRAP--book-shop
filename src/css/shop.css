@@ -1,6 +1,45 @@
-.cartWrapper {
-  width: 60vw;
+.shopWrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 100px;
 }
-.card-deck {
-  width: 100%;
+
+.shopWrapper h2 {
+  text-align: center;
+}
+.shopWrapper .card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.shopWrapper .card-deck .card {
+  flex-basis: 25%;
+  max-width: 400px;
+  cursor: pointer;
+}
+.shopWrapper .card-deck .card:hover {
+  opacity: 0.85;
+}
+.shopWrapper .card-title,
+.shopWrapper .card-text {
+  color: black;
+}
+.shopWrapper a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .shopWrapper .card-deck .card {
+    flex-basis: 33%;
+  }
+}
+
+@media (max-width: 540px) {
+  .shopWrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .shopWrapper .card-deck .card {
+    flex-basis: 100%;
+  }
 }

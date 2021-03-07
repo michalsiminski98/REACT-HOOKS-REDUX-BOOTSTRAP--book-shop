@@ -5,7 +5,7 @@ import'../css/navigation.css';
 const Navigation = () => {
     return ( 
         <nav className="navbar navbar-expand-lg navbar-light bg-info">
-            <NavLink to="/"> <a className="navbar-brand"> <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/1200px-NBC_logo.svg.png"/> </a> </NavLink>
+            <NavLink to="/"  className="navbar-brand"><img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/1200px-NBC_logo.svg.png"/></NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -18,7 +18,7 @@ const Navigation = () => {
                     <a className="text-light nav-item nav-link">Contact</a>
                 </NavLink>
                 <NavLink to="/shop">
-                    <a className="text-light nav-item nav-link" href="#">Shop</a>
+                    <a className="text-light nav-item nav-link">Shop</a>
                 </NavLink>
                 <NavLink to="/cart">
                     <a className="text-light nav-item nav-link">Cart</a>

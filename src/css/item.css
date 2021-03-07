@@ -1,0 +1,33 @@
+.productWrapper {
+  width: 90%;
+  padding: 9% 0;
+  margin: 50px auto;
+  display: flex;
+}
+.productPhotoWrapper {
+  flex-basis: 35%;
+}
+.productPhotoWrapper > img {
+  width: 100%;
+}
+.productDescribeWrapper {
+  flex-basis: 65%;
+  text-align: center;
+}
+.productDescribeWrapper button {
+  width: 120px;
+  height: 45px;
+  border: 0;
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  .productPhotoWrapper {
+    flex-basis: 60%;
+  }
+}
+@media (max-width: 540px) {
+  .productWrapper {
+    flex-direction: column;
+    box-sizing: content-box;
+    padding-bottom: 100px;
+  }
+}
