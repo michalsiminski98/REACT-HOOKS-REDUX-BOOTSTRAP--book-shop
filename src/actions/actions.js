@@ -14,11 +14,3 @@ export const removeFromCart = (itemID) => ({
     id: itemID,
   }
 });
-// changing quantity any item
-export const adjustQuantity = (itemID, count) => ({
-  type: ActionTypes.ADJUST_QTY,
-  payload:{
-    id: itemID,
-    quantity: count,
-  }
-});

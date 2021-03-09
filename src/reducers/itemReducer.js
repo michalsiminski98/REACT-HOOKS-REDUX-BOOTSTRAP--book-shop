@@ -15,5 +15,24 @@ const itemReducer = (state = INITIAL_STATE, action) => {
   switch(action.type){
     // adding
     case ActionsTypes.ADD:
-  }
+      const item = state.products.find(prod => prod.id === action.payload.id);
+      const inCart = state.cart.find(product => product.id === action.payload.id);
+      return {
+          ...state,
+          cart: inCart ?
+          state.cart.map(item =>
+          item.id === action.payload.id ? 
+          {...item, qty: item.qty + 1} : item) : 
+          [...state.cart, {...item, qty:1}]
+      };
+      case ActionsTypes.REMOVE:
+        return {
+          ...state,
+          cart:state.cart.filter(item => item.id !== action.payload.id)
+        };
+      default:
+        console.log(`Wrong action "${action.type}"`);
+        return state;
+  };
 }
+export default itemReducer;
