@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import'../css/home.css';
 
 const Home = () => {
@@ -37,9 +37,9 @@ const Home = () => {
         <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi inventore, possimus atque quia illum reiciendis.</p>
         <hr className="my-4"/>
         <p className="lead">
-        <NavLink to="/contact">
+        <Link to="/contact">
             <button className="btn btn-warning btn-lg">Contact</button>
-        </NavLink>
+        </Link>
         </p>
         </div>
         </div>

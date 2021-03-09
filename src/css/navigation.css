@@ -1,3 +1,6 @@
+.navbar {
+  width: 100vw;
+}
 .navbar-nav {
   width: 60%;
   margin: 0 auto;
@@ -5,7 +8,6 @@
   justify-content: space-around;
   font-size: 18px;
 }
-
 .logo {
   width: 40px;
 }
