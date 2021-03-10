@@ -36,7 +36,7 @@ import React from 'react';
    return (
        <>
      <section className="subscribeWrapper">
-       <h1>Subscribe!</h1>
+       <h1>Contact!</h1>
        <Formik
          initialValues={{
            firstName: '',
@@ -76,11 +76,11 @@ import React from 'react';
              placeholder="email..."
            />
 
-           <MyCheckbox name="acceptedTerms" className="checkboxSubscribe">
-             I accept the terms and conditions
-           </MyCheckbox>
+            <MyCheckbox name="acceptedTerms" className="checkboxSubscribe">
+              I accept the terms and conditions
+            </MyCheckbox>
  
-           <button type="submit">Subscribe</button>
+           <button type="submit">Send</button>
          </Form>
        </Formik>
      </section>
